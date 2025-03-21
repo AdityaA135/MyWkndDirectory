@@ -1,0 +1,37 @@
+body{
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.nishant{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    gap:2rem;
+    background-color:white;
+    color:black;
+    background-repeat:no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    &__btn{
+        background-color:blue;
+        border-radius: 3rem;
+        border:none;
+        padding:1rem;
+
+
+        }
+
+
+}
+a.nishant__link{
+ text-decoration:none;
+ color:white;
+ font-weight:600;
+ }

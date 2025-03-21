@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="\0"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[core.wcm.components.title.v2.editor]"
+    helpPath="https://www.adobe.com/go/aem_cmp_title_v3"
+    trackingFeature="core-components:title:v3">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <Path_x0020_Detail
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Additional Details"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <multi_x0020_level_x0020_1
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                composite="{Boolean}true"
+                                                fieldLabel="Details"
+                                                name="./multi1">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/container"
+                                                    name="./field1">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <Title
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldDescription="Leave empty to use the page title."
+                                                            fieldLabel="Title 1"
+                                                            name="./title1"/>
+                                                        <Link
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                            fieldDescription="Leave empty to use the page title."
+                                                            fieldLabel="Link 1"
+                                                            name="./link1"/>
+                                                        <Multi_x0020_level_x0020_2
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                            composite="{Boolean}true"
+                                                            fieldLabel="Details"
+                                                            name="./multi2">
+                                                            <field
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/foundation/container"
+                                                                name="./field2">
+                                                                <items jcr:primaryType="nt:unstructured">
+                                                                    <Title
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                        fieldDescription="Leave empty to use the page title."
+                                                                        fieldLabel="Title 2"
+                                                                        name="./title2"/>
+                                                                    <Link
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                        fieldDescription="Leave empty to use the page title."
+                                                                        fieldLabel="Link 2"
+                                                                        name="./link2"/>
+                                                                    <Multi_x0020_level_x0020_3
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                                        composite="{Boolean}true"
+                                                                        fieldLabel="Details"
+                                                                        name="./multi3">
+                                                                        <field
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/foundation/container"
+                                                                            name="./field3">
+                                                                            <items jcr:primaryType="nt:unstructured">
+                                                                                <Title
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                                    fieldDescription="Leave empty to use the page title."
+                                                                                    fieldLabel="Title 3"
+                                                                                    name="./title3"/>
+                                                                                <Link
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                                    fieldDescription="Leave empty to use the page title."
+                                                                                    fieldLabel="Link 3"
+                                                                                    name="./link3"/>
+                                                                            </items>
+                                                                        </field>
+                                                                    </Multi_x0020_level_x0020_3>
+                                                                </items>
+                                                            </field>
+                                                        </Multi_x0020_level_x0020_2>
+                                                    </items>
+                                                </field>
+                                            </multi_x0020_level_x0020_1>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </Path_x0020_Detail>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

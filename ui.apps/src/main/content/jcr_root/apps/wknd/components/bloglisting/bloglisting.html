@@ -1,0 +1,17 @@
+
+<sly data-sly-use.model="com.adobe.aem.guides.wknd.core.models.MyBlogListing"/>
+<div>
+    <ul data-sly-list.blog="${model.blogs}">
+        <li>
+            <sly data-sly-test="${blog.title}">
+                <p>Thumbnail:</p>
+                <img src="${blog.thumbnail}" alt="${blog.title}"/>
+                <h1>Title: ${blog.title}</h1>
+                <p>Description: ${blog.description}</p>
+                <p>Author: ${blog.author}</p><br>
+                <p>New Image: <br><img src="${blog.imagePath}"></img></p>
+                <hr><br>
+            </sly>
+        </li>
+    </ul>
+</div>

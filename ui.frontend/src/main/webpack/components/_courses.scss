@@ -1,0 +1,44 @@
+.container-fluid{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,109,121,1) 35%, rgba(0,212,255,1) 100%);    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin-top: 80px;
+
+    .card-body{
+        padding-top: 30px;
+        border-radius: 0.25rem;
+        height: 460px;
+        background-color: aqua;
+    }
+
+.course-card{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+    justify-content: center;
+
+    .card-photo{
+        width: fit-content;
+        height: auto;
+    }
+
+    .card-details{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.user-score{
+    .user-report{
+        margin: 20px 30px;
+    }
+
+    .user-report,tr,th,td{
+        border: 1px solid black;
+        padding: 10px;
+    }
+}
+}

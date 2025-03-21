@@ -1,0 +1,22 @@
+<sly data-sly-use.multiLevel1Model="com.adobe.aem.guides.wknd.core.models.MultiLevel0Model">
+    <sly data-sly-list.level1="${multiLevel1Model.multiLevel1List}">
+        <h2>Level 1: <br>Title: ${level1.title}</h2>
+        <a href="${level1.link}">Link: ${level1.link}</a>
+        <ul>
+            <sly data-sly-list.level2="${level1.multiLevel2List}">
+                <li>
+                    <h3>Level 2: <br>Title: ${level2.title}</h3>
+                    <a href="${level2.link}">Link: ${level2.link}</a>
+                    <ul>
+                        <sly data-sly-list.level3="${level2.multiLevel3List}">
+                            <li>
+                                <h4>Level 3: <br>Title: ${level3.title}</h4>
+                                <a href="${level3.link}">Link: ${level3.link}</a>
+                            </li>
+                        </sly>
+                    </ul>
+                </li>
+            </sly>
+        </ul>
+    </sly>
+</sly>
