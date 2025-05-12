@@ -15,7 +15,7 @@
  |  limitations under the License.
 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.adobe.aem.guides</groupId>
@@ -25,6 +25,7 @@
     </parent>
     <artifactId>aem-guides-wknd.core</artifactId>
     <name>WKND Sites Project - Core</name>
+
     <description>Core bundle for WKND Sites Project</description>
     <build>
         <plugins>
@@ -43,12 +44,13 @@
                         </goals>
                         <configuration>
                             <bnd><![CDATA[
-Import-Package: javax.annotation;version=0.0.0,*
-                                ]]></bnd>
+                            Import-Package: !jdk.internal.*, javax.annotation;version=0.0.0,*
+                            ]]></bnd>
                         </configuration>
                     </execution>
                 </executions>
             </plugin>
+
             <plugin>
                 <groupId>biz.aQute.bnd</groupId>
                 <artifactId>bnd-baseline-maven-plugin</artifactId>
@@ -81,6 +83,7 @@ Import-Package: javax.annotation;version=0.0.0,*
     </build>
 
     <dependencies>
+
         <dependency>
             <groupId>uk.org.lidalia</groupId>
             <artifactId>slf4j-test</artifactId>
@@ -95,7 +98,6 @@ Import-Package: javax.annotation;version=0.0.0,*
             <artifactId>core.wcm.components.core</artifactId>
             <scope>test</scope>
         </dependency>
-
 
         <!-- Testing -->
         <dependency>

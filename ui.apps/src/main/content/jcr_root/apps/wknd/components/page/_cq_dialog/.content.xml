@@ -1,77 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
     jcr:primaryType="nt:unstructured"
-    jcr:title="\0"
+    jcr:title="Page"
     sling:resourceType="cq/gui/components/authoring/dialog"
-    extraClientlibs="[core.wcm.components.title.v2.editor]"
-    helpPath="https://www.adobe.com/go/aem_cmp_title_v3"
-    trackingFeature="core-components:title:v3">
+    extraClientlibs="[cq.common.wcm,core.wcm.components.page.v3.editor,cq.wcm.msm.properties,granite.contexthub.configuration,cq.siteadmin.admin.properties,core.wcm.components.image.v3.editor]"
+    helpPath="https://www.adobe.com/go/aem_cmp_page_v3"
+    mode="edit"
+    trackingFeature="core-components:page:v3">
     <content
+        granite:class="cq-dialog-content-page"
         jcr:primaryType="nt:unstructured"
         sling:resourceType="granite/ui/components/coral/foundation/container">
         <items jcr:primaryType="nt:unstructured">
             <tabs
+                granite:class="cq-siteadmin-admin-properties-tabs"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="granite/ui/components/coral/foundation/tabs"
-                maximized="{Boolean}true">
+                size="L">
                 <items jcr:primaryType="nt:unstructured">
-                    <Path_x0020_Detail
+                    <My_x0020_sitemap
                         jcr:primaryType="nt:unstructured"
-                        jcr:title="Details"
-                        sling:resourceType="granite/ui/components/coral/foundation/container"
-                        margin="{Boolean}true">
+                        jcr:title="My SiteMap"
+                        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
                         <items jcr:primaryType="nt:unstructured">
-                            <columns
+                            <column
                                 jcr:primaryType="nt:unstructured"
-                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
-                                margin="{Boolean}true">
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
                                 <items jcr:primaryType="nt:unstructured">
-                                    <column
+                                    <title
                                         jcr:primaryType="nt:unstructured"
-                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        jcr:title="Hit &quot;/bin/generate-sitemap&quot;"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
                                         <items jcr:primaryType="nt:unstructured">
-                                            <text_x0020_1
+                                            <Exclude_x0020_this_x0020_page
                                                 jcr:primaryType="nt:unstructured"
-                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                                fieldDescription="Leave empty to use the page title."
-                                                fieldLabel="H1 text"
-                                                name="./text1"/>
-                                            <text_x0020_2
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                name="./excludeThisPage"
+                                                renderReadOnly="{Boolean}true"
+                                                text="Exclude this page "
+                                                value="{Boolean}true"/>
+                                            <Exclude_x0020_its_x0020_children
                                                 jcr:primaryType="nt:unstructured"
-                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                                fieldDescription="Leave empty to use the page title."
-                                                fieldLabel="H2 text"
-                                                name="./text2"/>
-                                            <desc
-                                                jcr:primaryType="nt:unstructured"
-                                                sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
-                                                fieldDescription="Leave empty to use the page title."
-                                                fieldLabel="Description"
-                                                name="./desc"/>
-                                            <image
-                                                jcr:primaryType="nt:unstructured"
-                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
-                                                fieldDescription="Leave empty to use the page title."
-                                                fieldLabel="Image"
-                                                name="./image"/>
-                                            <button
-                                                jcr:primaryType="nt:unstructured"
-                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                                fieldDescription="Leave empty to use the page title."
-                                                fieldLabel="Link "
-                                                name="./link"/>
-                                            <title
-                                                jcr:primaryType="nt:unstructured"
-                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                                fieldDescription="Leave empty to use the page title."
-                                                fieldLabel="Button Title"
-                                                name="./title"/>
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                name="./excludeChildren"
+                                                renderReadOnly="{Boolean}true"
+                                                text="Exclude children pages"
+                                                value="{Boolean}true"/>
                                         </items>
-                                    </column>
+                                    </title>
                                 </items>
-                            </columns>
+                            </column>
                         </items>
-                    </Path_x0020_Detail>
+                    </My_x0020_sitemap>
+                    <Sort_x0020_Pages
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Sort"
+                        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <Sort_x0020_By_x0020_Title
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Sort by title"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <Enable_x0020_Sorting
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                name="./sortByTitle"
+                                                renderReadOnly="{Boolean}true"
+                                                text="Enable sorting"
+                                                value="{Boolean}true"/>
+                                        </items>
+                                    </Sort_x0020_By_x0020_Title>
+                                </items>
+                            </column>
+                        </items>
+                    </Sort_x0020_Pages>
                 </items>
             </tabs>
         </items>

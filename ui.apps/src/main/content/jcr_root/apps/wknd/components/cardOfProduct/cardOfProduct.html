@@ -1,94 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .container-fluid{
-        color:black;
-        background: rgb(2,0,36);
-        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,109,121,1) 35%, rgba(0,212,255,1) 100%);    display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 80px;
-        margin-top: 80px;
-
-        .card-body{
-            padding-top: 30px;
-            border-radius: 0.25rem;
-            height: 460px;
-            background-color: #dfc1eb;
-        }
-
-    .course-card{
-        display: flex;
-        gap: 30px;
-        margin-bottom: 30px;
-        justify-content: center;
-
-        .card-photo{
-            width: fit-content;
-            height: auto;
-        }
-
-        .card-details{
-            display: flex;
-            flex-direction: column;
-        }
-    }
-
-    .user-score{
-        .user-report{
-            margin: 20px 30px;
-        }
-
-        .user-report,tr,th,td{
-            border: 1px solid black;
-            padding: 10px;
-        }
-    }
-    }
-    </style>
-</head>
-<body>
-<sly data-sly-use.model="com.adobe.aem.guides.wknd.core.models.Courses" ></sly>
-<div class="container-fluid">
-    <div class="card-body">
-        <div class="course-card">
-            <div class="card-photo">
-                <img src="${properties.image}" alt="Profile-Photo">
-            </div>
-            <div class="card-details">
-                <p class="Name">Name-${properties.name}</p>
-                <p class="Age">Age-${properties.age}</p>
-                <p class="Class">Class-${properties.classes}</p>
+<sly data-sly-use.model="com.adobe.aem.guides.wknd.core.models.CardOfProductModelSuperClass">
+<div class="card-container">
+    <sly data-sly-list.item="${model.cards}">
+        <div class="card">
+            <img src="${item.image}" alt="${item.title}" class="card-image"/>
+            <div class="card-content">
+                <h3 class="card-title">${item.title}</h3>
+                <p class="card-price">Price: ₹${item.price}</p>
+                <p class="card-discount">Discounted: ₹${item.discount}</p>
             </div>
         </div>
-
-        <div class="user-score">
-            <table class="user-report">
-                <tr>
-                    <th>Course Name</th>
-                    <th>Score</th>
-                    <th>Grade</th>
-                </tr>
-                <sly data-sly-list.item="${model.courseList}">
-                    <tr>
-                        <td>${item.courseName}</td>
-                        <td>${item.score}</td>
-                        <td>${item.grade}</td>
-                    </tr>
-                </sly>
-
-            </table>
-        </div>
-    </div>
+    </sly>
 </div>
-
-
-
-</body>
-</html>
- 
+</sly>
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html">
+<sly data-sly-call="${clientlib.css @ categories='cardClient'}"/>
+<sly data-sly-call="${clientlib.js @ categories='cardClient'}"/>
+</sly>

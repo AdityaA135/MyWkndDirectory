@@ -6,6 +6,7 @@ import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.injectorspecific.OSGiService;
+import com.adobe.cq.wcm.core.components.models.ExperienceFragment;
 
 import javax.annotation.Resource;
 import java.util.List;
@@ -14,7 +15,6 @@ import java.util.List;
 public class TestModelService {
     @OSGiService
     private TestImpl testImpl;
-
     protected List<String> getMyNumbers()
     {
         return testImpl.getNumbers();

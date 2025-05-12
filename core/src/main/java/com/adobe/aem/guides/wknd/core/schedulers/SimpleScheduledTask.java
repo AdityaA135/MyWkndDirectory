@@ -51,11 +51,15 @@ public class SimpleScheduledTask implements Runnable {
     private final Logger logger = LoggerFactory.getLogger(getClass());
 
     private String myParameter;
-    
+
+    /**
+     * Activation and run of the scheduler
+     */
     @Override
     public void run() {
         logger.debug("SimpleScheduledTask is now running, myParameter='{}'", myParameter);
     }
+
 
     @Activate
     protected void activate(final Config config) {

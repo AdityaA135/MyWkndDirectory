@@ -1,5 +1,4 @@
 package com.adobe.aem.guides.wknd.core.servlets;
-
 import com.adobe.aem.guides.wknd.core.services.IPAddressService;
 import com.adobe.aem.guides.wknd.core.services.Test;
 import org.apache.sling.api.SlingHttpServletRequest;
@@ -9,7 +8,6 @@ import org.apache.sling.api.servlets.SlingAllMethodsServlet;
 import org.apache.sling.api.servlets.SlingSafeMethodsServlet;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
-
 import javax.servlet.Servlet;
 import javax.servlet.ServletException;
 import java.io.IOException;

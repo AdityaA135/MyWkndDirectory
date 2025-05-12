@@ -1,0 +1,24 @@
+<sly data-sly-use.ingredientsModel="com.adobe.aem.guides.wknd.core.models.IngredientModel">
+
+    <!-- Title (e.g., "Cook With Leftover Food at Home") -->
+    <h1>${ingredientsModel.title}</h1>
+
+    <!-- Search input -->
+    <input type="text" placeholder="Search Ingredients" class="ingredient-search" />
+
+    <!-- Selected chips -->
+    <div class="selected-ingredients"></div>
+
+    <!-- Suggested Ingredients -->
+    <div class="ingredient-buttons">
+        <sly data-sly-list.ingredient="${ingredientsModel.ingredients}">
+            <button class="ingredient-btn${ingredient.active ? ' active' : ''}" data-name="${ingredient.name}">
+                + ${ingredient.name}
+            </button>
+        </sly>
+    </div>
+
+    <!-- CTA Button -->
+    <a href="${ingredientsModel.ctaLink}" class="explore-button">${ingredientsModel.ctaText}</a>
+
+</sly>

@@ -33,7 +33,6 @@ public class Courses {
         return name;
     }
 
-    public String grade;
 
     public String getClasses() {
         return classes;

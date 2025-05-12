@@ -1,94 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .container-fluid{
-        color:black;
-        background: rgb(2,0,36);
-        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,109,121,1) 35%, rgba(0,212,255,1) 100%);    display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 80px;
-        margin-top: 80px;
+<sly data-sly-use.model="com.adobe.aem.guides.wknd.core.models.WorkingAdityaModel">
 
-        .card-body{
-            padding-top: 30px;
-            border-radius: 0.25rem;
-            height: 460px;
-            background-color: #dfc1eb;
-        }
+<sly data-sly-test="${model.image}">
+    <img src="${model.image}" alt="Photo">
+</sly>
 
-    .course-card{
-        display: flex;
-        gap: 30px;
-        margin-bottom: 30px;
-        justify-content: center;
+<sly data-sly-test="${model.fullname}">
+    <h1>Name: ${model.fullname}</h1>
+</sly>
 
-        .card-photo{
-            width: fit-content;
-            height: auto;
-        }
+<sly data-sly-test="${model.smallName}">
+    <h2>Institute Name: ${model.smallName}</h2>
+</sly>
 
-        .card-details{
-            display: flex;
-            flex-direction: column;
-        }
-    }
+<sly data-sly-test="${model.views}">
+    <p>Views: ${model.views}</p>
+</sly>
 
-    .user-score{
-        .user-report{
-            margin: 20px 30px;
-        }
+<sly data-sly-list.level="${model.fieldClass}">
+    <p>${level.moreSmallname}</p>
+</sly>
 
-        .user-report,tr,th,td{
-            border: 1px solid black;
-            padding: 10px;
-        }
-    }
-    }
-    </style>
-</head>
-<body>
-<sly data-sly-use.model="com.adobe.aem.guides.wknd.core.models.Courses" ></sly>
-<div class="container-fluid">
-    <div class="card-body">
-        <div class="course-card">
-            <div class="card-photo">
-                <img src="${properties.image}" alt="Profile-Photo">
-            </div>
-            <div class="card-details">
-                <p class="Name">Name-${properties.name}</p>
-                <p class="Age">Age-${properties.age}</p>
-                <p class="Class">Class-${properties.classes}</p>
-            </div>
-        </div>
-
-        <div class="user-score">
-            <table class="user-report">
-                <tr>
-                    <th>Course Name</th>
-                    <th>Score</th>
-                    <th>Grade</th>
-                </tr>
-                <sly data-sly-list.item="${model.courseList}">
-                    <tr>
-                        <td>${item.courseName}</td>
-                        <td>${item.score}</td>
-                        <td>${item.grade}</td>
-                    </tr>
-                </sly>
-
-            </table>
-        </div>
-    </div>
-</div>
-
-
-
-</body>
-</html>
- 
+<sly data-sly-list.level="${model.fieldExp}">
+    <p>${level.experience}</p>
+</sly>
+</sly>

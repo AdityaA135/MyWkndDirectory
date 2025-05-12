@@ -1,0 +1,16 @@
+<sly data-sly-use.model="com.adobe.aem.guides.wknd.core.models.FirstCardFoodieModel">
+<div>
+    <sly data-sly-list.item="${model.myCards}">
+        <div>
+            <img src="${item.foodImage}"/>
+            <div>
+                <h3 >Title: ${item.foodTitle}</h3>
+                <p >Tag: ${item.foodTag}, use this as a filter here</p>
+                <p >Time: ${item.foodTime} mins</p>
+                <p >Level: ${item.foodLevel}</p>
+            </div>
+        </div>
+    </sly>
+    <button type="button">View All</button>
+</div>
+</sly>

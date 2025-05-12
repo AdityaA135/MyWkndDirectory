@@ -1,0 +1,21 @@
+<div class="weather-container">
+  <title>Weather Lookup</title>
+  <h2 class="weather-title">Check Weather</h2>
+  <form id="weatherForm" class="weather-form">
+    <input
+      type="text"
+      id="city"
+      name="city"
+      placeholder="Enter City Name"
+      required
+      class="weather-input"
+    />
+    <button type="submit" class="weather-button">Get Weather</button>
+  </form>
+  <div id="weatherResult" class="weather-result"></div>
+</div>
+
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html">
+  <sly data-sly-call="${clientlib.js @ categories='wknd.weather'}" />
+  <sly data-sly-call="${clientlib.css @ categories='wknd.weather'}" />
+</sly>

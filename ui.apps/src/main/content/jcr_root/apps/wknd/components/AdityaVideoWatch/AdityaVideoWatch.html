@@ -1,0 +1,10 @@
+<sly <sly data-sly-use.model="com.adobe.aem.guides.wknd.core.models.AdityaVideoModel"/>
+
+<sly data-sly-test="${model.titleSegment}">
+    <h2>${modelVideo.titleSegment}</h2>
+</sly>
+
+<sly data-sly-list.level1="${model.listAdityaVideo}">
+    <p>Video Title: ${level1.videoTitle}</p>
+    <p><a href="${level1.link}">LINK</a></p>
+</sly>

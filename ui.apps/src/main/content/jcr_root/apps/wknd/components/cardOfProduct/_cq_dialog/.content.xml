@@ -39,7 +39,7 @@
                                                 <field
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="granite/ui/components/foundation/container"
-                                                    name="./field1">
+                                                    name="./fieldProduct">
                                                     <items jcr:primaryType="nt:unstructured">
                                                         <Image
                                                             jcr:primaryType="nt:unstructured"

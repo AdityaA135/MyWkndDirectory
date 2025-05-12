@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Properties"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <Footer_x0020_image
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                        fieldLabel="Give footer background image"
+                        name="./footerImage"/>
+                    <Footer_x0020_logo_x0020_image
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                        fieldLabel="Give footer logo image"
+                        name="./footerLogoImage"/>
+                    <Sub_x0020_label_x0020_text
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Sub label text"
+                        name="./subLabel"/>
+                    <placeholder
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Placeholder text for search bar"
+                        name="./placeHolderEmail"/>
+                    <textBeforeLink
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Text before the word of link"
+                        name="./textBeforeLink"/>
+                    <text_x0020_with_x0020_link
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Text which needs link"
+                        name="./midTextForLink"/>
+                    <link_x0020_for_x0020_the_x0020_text
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Provide llink for the text"
+                        name="./linkForText"/>
+                    <textAfterLink
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Text after the link"
+                        name="./textAfterLink"/>
+                    <callToActionText
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Text for CTA button"
+                        name="./callToSubscribe"/>
+                    <Left_x0020_footer_x0020_1
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Footer Redirect 1"
+                        name="./foot1"/>
+                    <Left_x0020_footer_x0020_Link_x0020_1
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Link for Footer Redirect 1"
+                        name="./linkFoot1"/>
+                    <Left_x0020_footer_x0020_2
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Footer Redirect 2"
+                        name="./foot2"/>
+                    <Left_x0020_footer_x0020_Link_x0020_2
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Link for Footer Redirect 2"
+                        name="./linkFoot2"/>
+                    <Left_x0020_footer_x0020_3
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Footer Redirect 3"
+                        name="./foot3"/>
+                    <Left_x0020_footer_x0020_Link_x0020_3
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Link for Footer Redirect 3"
+                        name="./linkFoot3"/>
+                    <Left_x0020_footer_x0020_4
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Footer Redirect 4"
+                        name="./foot4"/>
+                    <Left_x0020_footer_x0020_Link_x0020_4
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Link for Footer Redirect 4"
+                        name="./linkFoot4"/>
+                    <Left_x0020_footer_x0020_5
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Footer Redirect 5"
+                        name="./foot5"/>
+                    <Left_x0020_footer_x0020_Link_x0020_5
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Link for Footer Redirect 5"
+                        name="./linkFoot5"/>
+                    <Left_x0020_footer_x0020_6
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Footer Redirect 6"
+                        name="./foot6"/>
+                    <Left_x0020_footer_x0020_Link_x0020_6
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Link for Footer Redirect 6"
+                        name="./linkFoot6"/>
+                    <bottom_x0020_left_x0020_multi
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                        composite="{Boolean}true"
+                        fieldLabel="Left Bottom footer text and link details"
+                        name="./multi1">
+                        <field
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/container"
+                            name="./fieldFooter1">
+                            <items jcr:primaryType="nt:unstructured">
+                                <Left_x0020_Bottom_x0020_Text
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldDescription="Leave empty to use the page title."
+                                    fieldLabel="Left Bottom text"
+                                    name="./leftBottomText"/>
+                                <left_x0020_bottom_x0020_text_x0020_link
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldDescription="Leave empty to use the page title."
+                                    fieldLabel="Left Bottom text link"
+                                    name="./leftBottomLink"/>
+                            </items>
+                        </field>
+                    </bottom_x0020_left_x0020_multi>
+                    <bottom_x0020_right_x0020_multi
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                        composite="{Boolean}true"
+                        fieldLabel="Left Bottom footer text and link details"
+                        name="./multi1">
+                        <field
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/container"
+                            name="./fieldFooter2">
+                            <items jcr:primaryType="nt:unstructured">
+                                <Left_x0020_Bottom_x0020_Text
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                    fieldDescription="Leave empty to use the page title."
+                                    fieldLabel="Provide right bottom image"
+                                    name="./leftBottomImage"/>
+                                <left_x0020_bottom_x0020_text_x0020_link
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldDescription="Leave empty to use the page title."
+                                    fieldLabel="Right bottom image link"
+                                    name="./leftBottomImageLink"/>
+                                <Alt_x0020_for_x0020_image
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldDescription="Leave empty to use the page title."
+                                    fieldLabel="Right bottom image alt"
+                                    name="./leftBottomImageAlt"/>
+                            </items>
+                        </field>
+                    </bottom_x0020_right_x0020_multi>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

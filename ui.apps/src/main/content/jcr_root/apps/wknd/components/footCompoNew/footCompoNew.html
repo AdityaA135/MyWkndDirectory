@@ -1,0 +1,54 @@
+<footer class="footer">
+    <div class="footer__top-border">
+        <img src="${properties.footerImage}" class="footer__top-img">
+    </div>
+    <div class="footer__mid">
+        <a class="footer__logo"><img src="${properties.footerLogoImage}"></a>
+        <form class="footer__newsletter">
+            <label for="email-id">${properties.subLabel}</label>
+            <input id="email-id" placeholder="${properties.placeHolderEmail}" type="text" class="footer__input">
+            <div class="footer__checkbox-wrapper">
+                <input type="checkbox" id="subscribe-agree" class="footer__checkbox">
+                <label for="subscribe-agree" class="footer__text">
+                    ${properties.textBeforeLink}
+                    <a href="${properties.linkForText}" target="_blank" class="footer__hyperlink">${properties.midTextForLink}</a> ${properties.textAfterLink}
+                </label>
+
+            </div>
+
+            <button type="submit" class="footer__submit-btn">${properties.callToSubscribe}</button>
+        </form>
+        <div class="footer__links">
+            <div class="footer__links-left">
+                <a href="${properties.linkFoot1}">${properties.foot1}</a>
+                <a href="${properties.linkFoot2}">${properties.foot2}</a>
+                <a href="${properties.linkFoot3}">${properties.foot3}</a>
+            </div>
+            <div class="footer__links-right">
+                <a href="${properties.linkFoot4}">${properties.foot4}</a>
+                <a href="${properties.linkFoot5}">${properties.foot5}</a>
+                <a href="${properties.linkFoot6}">${properties.foot6}</a>
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+    <sly data-sly-use.model="com.adobe.aem.guides.wknd.core.models.FooterBottomCompo">
+        <div class="footer__bottom">
+            <div class="footer__bottom-left">
+                <sly data-sly-list.item="${model.myCards1}">
+                    <a href="${item.leftBottomLink}" target="_blank" class="footer__bottom-text">
+                        ${item.leftBottomText}
+                    </a>
+                </sly>
+            </div>
+
+            <div class="footer__bottom-right">
+                <sly data-sly-list.item="${model.myCards2}">
+                    <a href="${item.leftBottomImageLink}"><img src="${item.leftBottomImage}" alt="${item.leftBottomImageAlt}" class="footer__bottom-socials"></a>
+                </sly>
+            </div>
+        </div>
+</footer>
+    

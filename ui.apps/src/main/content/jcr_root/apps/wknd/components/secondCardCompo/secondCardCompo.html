@@ -1,0 +1,16 @@
+<sly data-sly-use.model="com.adobe.aem.guides.wknd.core.models.SecondCardFoodieModel">
+<div>
+    <sly data-sly-list.item="${model.myCards}">
+        <div>
+            <img src="${item.foodBlogImage}"/>
+            <div>
+                <h3 >Title: ${item.foodBlogTitle}</h3>
+                <p >Description: ${item.foodBlogDesc}</p>
+                <p >Date: ${item.foodBlogDate}</p>
+                <p> Category: ${item.foodExplore}</p>
+            </div>
+        </div>
+    </sly>
+    <button type="button">Explore More</button>
+</div>
+</sly>
